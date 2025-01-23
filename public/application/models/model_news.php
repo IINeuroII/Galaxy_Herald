@@ -2,7 +2,7 @@
 	
 class Model_News extends Model {
 	public function get_data() {
-		$link = mysqli_connect("MySQL-8.0", "root", "", "task_db");
+		$link = mysqli_connect("localhost", "db_name", "db_password", "db_name");
 		if ($link == false) {
 			print("Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error());
 		}
