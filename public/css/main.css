@@ -1,0 +1,119 @@
+.fon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	aspect-ratio: 3;
+}
+
+.fon_text {
+	padding-left: 10%;
+}
+
+.fon_title {
+	color: white;
+	text-align: left;
+	font-size: 3vw;
+	font-weight: 600;
+}
+
+.news_title {
+	margin-top: 50px;
+}
+
+.fon_announce {
+	color: white;
+	font-size: 1.5vw;
+	font-weight: 400;
+}
+
+.card {
+	flex-direction: column;
+}
+
+.card_head {
+	margin-top: 25px;
+}
+
+.card_description {
+	margin-top: 10px;
+}
+
+.card_button {
+	margin-top: auto;
+}
+
+.pagination {
+	height: 54px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.pagination div:not(.arrow-right, .arrow-right div, .arrow-left, .arrow-left div) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 54px;
+	border: 2px solid #841844;
+	border-radius: 50px;
+	margin-left: 1px;
+}
+
+@media (max-width: 480px) {
+	.pagination div:not(.arrow-right, .arrow-right div, .arrow-left, .arrow-left div) {
+		height: 27px;
+	}
+}
+
+.pagination a {
+	--color: #841844;
+	font-size: 16px;
+	color: #841844;
+	text-decoration: none;
+}
+
+.pagination a:hover {
+	--color: #FFF;
+}
+
+.pagination_arrow {
+	width: 106px;
+}
+
+@media (max-width: 480px) {
+	.pagination_arrow {
+		width: 53px;
+	}
+}
+
+.pagination_arrow:hover {
+	background-color: #841844;
+	color: #fff;
+}
+
+.pagination_page {
+	width: 56px;
+	color: #841844;
+}
+
+@media (max-width: 480px) {
+	.pagination_page {
+		width: 28px;
+	}
+}
+
+.pagination_active_page {
+	width: 56px;
+	border-radius: 0px;
+	color: #fff;
+	background-color: #841844;
+}
+
+@media (max-width: 480px) {
+	.pagination_active_page {
+		width: 28px;
+	}
+}
