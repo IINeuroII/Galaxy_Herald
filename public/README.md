@@ -3,3 +3,6 @@
 <br/>
 &copy; vitalyswipe
 </p>
+<p>
+Сайт: http://saschart.beget.tech/
+</p>
