@@ -5,12 +5,10 @@ class Route
 
 	static function start()
 	{
-		// контроллер и действие по умолчанию
 		$controller_name = 'Main';
 		$action_name = 'index';
 		
 		$routes = explode('/', strtok($_SERVER['REQUEST_URI'], '?'));
-		// получаем имя контроллера
 		if ( !empty($routes[1]) )
 		{	
 			$controller_name = $routes[1];
